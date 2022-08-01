@@ -1,0 +1,1 @@
+This folder is used to save the original MNIST dataset and output cluttered_mnist dataset.
