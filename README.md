@@ -6,15 +6,15 @@ This repository is utilized to identify the factors that influent the attention 
 ## Pretrained models on PyTorch Hub
 Pretrained model is used to speed up the training process. The evaluation results of different models can be found from [DINO](https://github.com/facebookresearch/dino) <br>
 ```
-import torch <br>
-vits16 = torch.hub.load('facebookresearch/dino:main', 'dino_vits16') <br>
-vits8 = torch.hub.load('facebookresearch/dino:main', 'dino_vits8') <br>
-vitb16 = torch.hub.load('facebookresearch/dino:main', 'dino_vitb16') <br>
-vitb8 = torch.hub.load('facebookresearch/dino:main', 'dino_vitb8') <br>
-xcit_small_12_p16 = torch.hub.load('facebookresearch/dino:main', 'dino_xcit_small_12_p16') <br>
-xcit_small_12_p8 = torch.hub.load('facebookresearch/dino:main', 'dino_xcit_small_12_p8') <br>
-xcit_medium_24_p16 = torch.hub.load('facebookresearch/dino:main', 'dino_xcit_medium_24_p16') <br>
-xcit_medium_24_p8 = torch.hub.load('facebookresearch/dino:main', 'dino_xcit_medium_24_p8') <br>
+import torch 
+vits16 = torch.hub.load('facebookresearch/dino:main', 'dino_vits16') 
+vits8 = torch.hub.load('facebookresearch/dino:main', 'dino_vits8') 
+vitb16 = torch.hub.load('facebookresearch/dino:main', 'dino_vitb16') 
+vitb8 = torch.hub.load('facebookresearch/dino:main', 'dino_vitb8') 
+xcit_small_12_p16 = torch.hub.load('facebookresearch/dino:main', 'dino_xcit_small_12_p16') 
+xcit_small_12_p8 = torch.hub.load('facebookresearch/dino:main', 'dino_xcit_small_12_p8') 
+xcit_medium_24_p16 = torch.hub.load('facebookresearch/dino:main', 'dino_xcit_medium_24_p16') 
+xcit_medium_24_p8 = torch.hub.load('facebookresearch/dino:main', 'dino_xcit_medium_24_p8') 
 resnet50 = torch.hub.load('facebookresearch/dino:main', 'dino_resnet50')
 ```
 ## Training
