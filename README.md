@@ -5,7 +5,7 @@ We will training on cluttered MNIST dataset. You can setup the dataset by follow
 - download `./data/mnist.pkl.gz` dataset. This is the original MNIST dataset. It contains 50,000 train images, 10,000 test images and 10,000 validation images <br>
 - run `dataset.ipynb` file to get the cluttered_mnist dataset. To make the result more intuitive, convert .npz dataset to .JPG format <br>
 ## Pretrained models on PyTorch Hub
-Pretrained model is used to speed up the training process. The evaluation results of different models can be found from [DINO](https://github.com/facebookresearch/dino) <br>
+Pretrained model is used to speed up the training process. The evaluation results of different models can be found from [DINO](https://github.com/facebookresearch/dino). <br>
 ```
 import torch 
 vits16 = torch.hub.load('facebookresearch/dino:main', 'dino_vits16') 
