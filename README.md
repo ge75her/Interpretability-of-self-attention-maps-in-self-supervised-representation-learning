@@ -19,7 +19,7 @@ xcit_medium_24_p8 = torch.hub.load('facebookresearch/dino:main', 'dino_xcit_medi
 resnet50 = torch.hub.load('facebookresearch/dino:main', 'dino_resnet50')
 ```
 ## Training
-most code are copy from [DINO](https://github.com/facebookresearch/dino) <br>
+most code are copy from [DINO](https://github.com/facebookresearch/dino). <br>
 - run `train.py` or `whole_pipline.ipynb` to training the dataset, save the output results to `./logs` folder <br>
 - run `visual_augmentation.ipynb` to visualize the data augmentation results <br>
 - after training process, run `visual_attention.ipynb` to visualize the final attention map <br>
