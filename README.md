@@ -1,5 +1,5 @@
 # Interpretability of self-attention maps in self-supervised representation learning
-Using self-supervised learning methods on binary iamges, this repository is used to determine the variables that influence the self-attention map and to try to determine what are the important components to obtaining a high resolution and high quality self-attention maps. To learn more, please read the essay.
+Using self-supervised learning methods on binary iamges, this repository is used to determine the variables that influence the self-attention map and to try to determine what are the important components to obtaining a high resolution and high quality self-attention maps. To learn more, please read the essay `Forschungspraxis.pdf`.
 ## Create Dataset
 We will training on cluttered MNIST dataset. You can setup the dataset by following steps:
 - download `./data/mnist.pkl.gz` dataset. This is the original MNIST dataset. It contains 50,000 train images, 10,000 test images and 10,000 validation images <br>
