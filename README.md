@@ -1,6 +1,7 @@
-# Interpretable-representation-learning-with-self-supervised-learning
-This repository is utilized to identify the factors that influent the attention map with self-supervised learning.
+# Interpretability of self-attention maps in self-supervised representation learning
+Using self-supervised learning methods on binary iamges, this repository is used to determine the variables that influence the self-attention map and to try to determine what are the important components to obtaining a high resolution and high quality self-attention maps. To learn more, please read the essay.
 ## Create Dataset
+We will training on cluttered MNIST dataset. You can setup the dataset by following steps:
 - download `./data/mnist.pkl.gz` dataset. This is the original MNIST dataset. It contains 50,000 train images, 10,000 test images and 10,000 validation images <br>
 - run `dataset.ipynb` file to get the cluttered_mnist dataset. To make the result more intuitive, convert .npz dataset to .JPG format <br>
 ## Pretrained models on PyTorch Hub
@@ -23,9 +24,14 @@ most code are copy from [DINO](https://github.com/facebookresearch/dino) <br>
 - run `visual_augmentation.ipynb` to visualize the data augmentation results <br>
 - after training process, run `visual_attention.ipynb` to visualize the final attention map <br>
 ## Result
-TODO
-- Background
-- resolution
-- simCLR loss VS DINO loss
-- multicrop
-- size of attention map
+### Multi-crops traning
+multi-crops training is an important component for self-supervised ViT pretraining. Comparing with 4 crops per branch, 2 crops per branch and one single crop per branch, the resulting findings are not significantly different. There may not be much information in the binary images, which is one potential reason.
+### Loss Function
+NCE(Noise Contractive Estimator) loss function and Cross Entropy loss function are two commonly loss function in contrastive learning. As a result, training with both
+of them can predict a quite well classification as shown in self-attention map. The loss function is not an important component that influent self-attention map.
+### Data Augmentation
+we fed different views to two branches. The results show that for binary images, the size of the input images and the different views we fed into the model are two important components to obtain a high resolution and high quality self-attention maps. However, the performance on binary images is not as good as on color images. 
+## Future work
+- training on a bigger batch size
+- investigate the meaning of different heads on ViT, try to figure out how many head do we really need
+- consider other state-of the art contrastive learning methods
