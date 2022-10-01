@@ -32,6 +32,6 @@ of them can predict a quite well classification as shown in self-attention map. 
 ### Data Augmentation
 we fed different views to two branches. The results show that for binary images, the size of the input images and the different views we fed into the model are two important components to obtain a high resolution and high quality self-attention maps. However, the performance on binary images is not as good as on color images. 
 ## Future work
-- training on a bigger batch size
+- training with a bigger batch size
 - investigate the meaning of different heads on ViT, try to figure out how many head do we really need
 - consider other state-of the art contrastive learning methods
